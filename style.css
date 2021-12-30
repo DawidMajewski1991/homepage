@@ -1,0 +1,43 @@
+body {
+  background: #fefefe;
+  text-align: justify;
+}
+
+.mainHeader {
+  color: rgb(107, 161, 18);
+}
+
+.sectionHeader {
+  color: #a514aa;
+}
+
+.diaryHeader {
+  color: #1455aa;
+}
+
+.smallHeader {
+  color: #3ab2c7;
+}
+
+.text {
+  background: #fac664;
+}
+
+.footerText {
+  background: #fa9b64;
+}
+
+.authorPhoto {
+  width: 320px;
+  height: 220px;
+}
+
+.picture {
+  width: 200px;
+  height: 200px;
+}
+
+.weekPhoto {
+  width: 250px;
+  height: 150px;
+}
