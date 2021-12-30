@@ -1,30 +1,30 @@
 body {
-  background: #d8defc;
+  background: #f1fbff;
   text-align: justify;
 }
 
 .mainHeader {
-  color: rgb(107, 161, 18);
+  color: #003A64;
 }
 
 .sectionHeader {
-  color: #a514aa;
+  color: #005491;
 }
 
 .diaryHeader {
-  color: #1455aa;
+  color: #0067b1;
 }
 
 .smallHeader {
-  color: #3ab2c7;
+  color: #007ad1;
 }
 
 .text {
-  background: #fac664;
+  background: #d9f0ff;
 }
 
 .footerText {
-  background: #fa9b64;
+  background: #bfe3fc;
 }
 
 .authorPhoto {
@@ -40,4 +40,9 @@ body {
 .weekPhoto {
   width: 250px;
   height: 150px;
+}
+
+.mainLink {
+  text-decoration: none;
+  color: #004f52;
 }
