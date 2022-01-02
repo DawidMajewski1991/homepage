@@ -1,6 +1,15 @@
 body {
+  background-image: url('bg.png');
+}
+
+.page {
   background: #f1fbff;
+  border: 1px solid black;
   text-align: justify;
+  margin: 10px auto;
+  max-width: 700px;
+  border-radius: 8px;
+  padding: 10px;
 }
 
 .mainHeader {
@@ -21,10 +30,15 @@ body {
 
 .text {
   background: #d9f0ff;
+  padding: 10px;
+  border-radius: 5px;
 }
 
 .footerText {
   background: #bfe3fc;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
 }
 
 .authorPhoto {
@@ -45,4 +59,8 @@ body {
 .mainLink {
   text-decoration: none;
   color: #004f52;
+}
+
+.about {
+  max-width: 700px; 
 }
