@@ -2,99 +2,204 @@
 <html lang="pl">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
-  <link href="style.css" rel="stylesheet" type="text/css">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Portfolio</title>
+	<link href="normalize.css" rel="stylesheet" type="text/css">
+	<link href="style.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
-  <header class="navigation">
-    <a class="navigation__link" href="index.html">Strona główna</a>
-    <a class="navigation__link" href="html-desc.html">HTML</a>
-    <a class="navigation__link" href="monday.html">Poniedziałek</a>
-    <a class="navigation__link" href="tuesday.html">Wtorek</a>
-    <a class="navigation__link" href="wednesday.html">Środa</a>
-    <a class="navigation__link" href="buttons.html">Przyciski</a>
-  </header>
+	<header class="site-header">
+		<nav class="navigation">
+			<ul class="navigation__list">
+				<li class="navigation__item"><a class="navigation__link navigation__link--js" href="index.html">Strona główna</a></li>
+				<li class="navigation__item"><a class="navigation__link navigation__link--js" href="html-desc.html">HTML</a></li>
+				<li class="navigation__item"><a class="navigation__link navigation__link--js" href="monday.html">Poniedziałek</a></li>
+				<li class="navigation__item"><a class="navigation__link navigation__link--js" href="tuesday.html">Wtorek</a></li>
+				<li class="navigation__item"><a class="navigation__link navigation__link--js" href="wednesday.html">Środa</a></li>
+				<li class="navigation__item"><a class="navigation__link navigation__link--js" href="buttons.html">Przyciski</a></li>
+				<li class="navigation__item"><a class="navigation__link navigation__link--js" href="flexbox.html">Flexbox</a></li>
+			</ul>
+		</nav>
+		
+	</header>
 
-  <main class="page" id="top">
-    <header>
-      <h1 class="page__main-header">
-        Dawid Majewski - Portfolio
-      </h1>
+	<main class="page" id="top">
+		<header>
+			<h1 class="page__main-header">
+				Dawid Majewski - Portfolio
+			</h1>
 
-      <a class="page__inner-link" href="#articles">Artykuły</a>
-    </header>
+			<a class="page__inner-link" href="#articles">Artykuły</a>
+		</header>
 
-    <section class="about">
+		<section class="about">
 
-      <div class="about__box-a">FIND 2019</div>
-      <div class="about__box-b">FIND 2019</div>
+			<div class="about__box-a">FIND 2019</div>
+			<div class="about__box-b">FIND 2019</div>
 
-      <img src="photo.jpg" alt="autor" title="Dawid Majewski" class="about__photo">
+			<img src="photo.jpg" alt="autor" title="Dawid Majewski" class="about__photo">
 
-      <h2 class="about__header">
-        Kim jestem?
-      </h2>
+			<h2 class="about__header">
+				Kim jestem?
+			</h2>
 
-      <p class="about__text">Jestem Dawid Majewski. Uczę się frontendu oraz Pythona. Gram na basie i uczę innych muzyki.
-      </p>
-    </section>
+			<p class="about__text">
+				Jestem Dawid Majewski. Uczę się frontendu oraz Pythona. Gram na basie i uczę innych muzyki.
+			</p>
 
-    <section id="articles" class="articles">
-      <h2 class="articles__header">
-        Artykuły:
-      </h2>
-      <article class="articles__section">
-        <h3 class="articles__inner-article-title">HTML</h3>
-        <p class="articles__text">HTML pozwala opisać strukturę informacji zawartych wewnątrz strony internetowej,
-          nadając
-          odpowiednie
-          znaczenie semantyczne poszczególnym fragmentom tekstu – formując hiperłącza, akapity, nagłówki, listy – oraz
-          osadza w tekście dokumentu obiekty plikowe, na przykład multimedia, lub elementy baz danych, na przykład
-          interaktywne formularze danych. HTML umożliwia określenie wyglądu dokumentu w przeglądarce internetowej. Do
-          szczegółowego opisu formatowania akapitów, nagłówków, użytych czcionek i kolorów, zalecane jest
-          wykorzystywanie kaskadowych arkuszy stylów (w skrócie CSS).</p>
-      </article>
+			<p class="about__text about__text--color">
+				Lubię muzykę popową i alternatywną. Gram w zespole Birds No Fly. Rzadko słucham muzyki. Lubię oglądać
+				ciekawe kanały na YouTube. Nie lubie Facebooka. Lubie kebab.
+			</p>
+			<section class="hobby">
+				<header class="hobby__header">
+					Hobby
+				</header>
+				<ul class="hobby__list">
+					<li>Bas</li>
+					<li>Gitara</li>
+					<li>Skateboarding</li>
+					<li>Programowanie</li>
+					<li>Układanie planu dnia
+						<ol>
+							<li>Wziąć kartkę.</li>
+							<li>Wziąć długopis.</li>
+							<li>Rozpisać plan.</li>
+						</ol>
+					</li>
+				</ul>
+			</section>
+			<section class="plan">
+				<header class="plan__header">
+					Plan
+				</header>
+				<ol>
+					<li>Uruchomić przeglądarkę.</li>
+					<li>Włączyć YouTube.</li>
+					<li>Znaleźć kanał Żądny Przygód.</li>
+					<li>Oglądać.</li>
+				</ol>
+			</section>
+			<section class="dictionary">
+				<header class="dictionary__header">
+					Słownik
+				</header>
+				<dl class="dictionary__definitions">
+					<dt>HTML</dt>
+					<dd>HyperText Markup Language</dd>
+					<dt>CSS</dt>
+					<dd>Cascading Style Sheets</dd>
+					<dt>JS</dt>
+					<dt>ECMAScript</dt>
+					<dd>JavaScript powinno się pisać zgodnie ze standardami ECMA.</dd>
+				</dl>
+			</section>
+			<section class="table">
+				<header class="table__header">
+					Słownik
+				</header>
+				<table class="table__contents">
+					<caption>Rodzina:</caption>
+					<thead>
+						<th>Imię</th>
+						<th>Nazwisko</th>
+						<th>Wiek</th>
+						<th>Miasto</th>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Dawid</td>
+							<td>Majewski</td>
+							<td>30</td>
+							<td>Elbląg</td>
+						</tr>
+						<tr>
+							<td>Dominik</td>
+							<td>Majewski</td>
+							<td>29</td>
+							<td>Elbląg</td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+		</section>
 
-      <article>
-        <h3 class="articles__inner-article-title">CSS</h3>
-        <p class="articles__text">Kaskadowe arkusze stylów (ang. Cascading Style Sheets, w skrócie CSS) – język służący
-          do opisu
-          formy
-          prezentacji (wyświetlania) stron WWW. CSS został opracowany przez organizację W3C w 1996 r. jako potomek
-          języka DSSSL przeznaczony do używania w połączeniu z SGML-em. Pierwszy szkic CSS zaproponował w 1994 r. Håkon
-          Wium Lie[1]. Arkusz stylów CSS to lista dyrektyw (tzw. reguł) ustalających w jaki sposób ma zostać wyświetlana
-          przez przeglądarkę internetową zawartość wybranego elementu (lub elementów) (X)HTML lub XML. Można w ten
-          sposób opisać wszystkie pojęcia odpowiedzialne za prezentację elementów dokumentów internetowych, takie jak
-          rodzina czcionek, kolor tekstu, marginesy, odstęp międzywierszowy lub nawet pozycja danego elementu względem
-          innych elementów bądź okna przeglądarki. Wykorzystanie arkuszy stylów daje znacznie większe możliwości
-          pozycjonowania elementów na stronie, niż oferuje sam (X)HTML. CSS został stworzony w celu odseparowania
-          struktury dokumentu od formy jego prezentacji. Separacja ta zwiększa zakres dostępności witryny, zmniejsza
-          zawiłość dokumentu, ułatwia wprowadzanie zmian w strukturze dokumentu. CSS ułatwia także zmiany w renderowaniu
-          strony w zależności od obsługiwanego medium (ekran, palmtop, dokument w druku, czytnik ekranowy). Stosowanie
-          zewnętrznych arkuszy CSS daje możliwość zmiany wyglądu wielu stron naraz bez ingerowania w sam kod (X)HTML,
-          ponieważ arkusze mogą być wspólne dla wielu dokumentów.</p>
-      </article>
+		<section id="articles" class="articles">
+			<h2 class="articles__header">
+				Artykuły:
+			</h2>
+			<article class="articles__section">
+				<h3 class="articles__inner-article-title">HTML</h3>
+				<p class="articles__text">HTML pozwala opisać strukturę informacji zawartych wewnątrz strony
+					internetowej,
+					nadając
+					odpowiednie
+					znaczenie semantyczne poszczególnym fragmentom tekstu – formując hiperłącza, akapity, nagłówki,
+					listy – oraz
+					osadza w tekście dokumentu obiekty plikowe, na przykład multimedia, lub elementy baz danych, na
+					przykład
+					interaktywne formularze danych. HTML umożliwia określenie wyglądu dokumentu w przeglądarce
+					internetowej. Do
+					szczegółowego opisu formatowania akapitów, nagłówków, użytych czcionek i kolorów, zalecane jest
+					wykorzystywanie kaskadowych arkuszy stylów (w skrócie CSS).</p>
+			</article>
 
-      <article>
-        <h3 class="articles__inner-article-title">JS</h3>
-        <p class="articles__text">JavaScript, w skrócie JS – skryptowy język programowania, stworzony przez firmę
-          Netscape, najczęściej stosowany na stronach internetowych. Twórcą JavaScriptu jest Brendan Eich[3]. W połowie
-          lat 90. XX wieku organizacja ECMA wydała na podstawie JavaScriptu standard języka skryptowego o nazwie
-          ECMAScript, aktualnie rozwijaniem tego standardu zajmuje się komisja TC39[4].
-        </p>
-      </article>
-    </section>
-  </main>
+			<article>
+				<h3 class="articles__inner-article-title">CSS</h3>
+				<p class="articles__text">Kaskadowe arkusze stylów (ang. Cascading Style Sheets, w skrócie CSS) – język
+					służący
+					do opisu
+					formy
+					prezentacji (wyświetlania) stron WWW. CSS został opracowany przez organizację W3C w 1996 r. jako
+					potomek
+					języka DSSSL przeznaczony do używania w połączeniu z SGML-em. Pierwszy szkic CSS zaproponował w 1994
+					r. Håkon
+					Wium Lie[1]. Arkusz stylów CSS to lista dyrektyw (tzw. reguł) ustalających w jaki sposób ma zostać
+					wyświetlana
+					przez przeglądarkę internetową zawartość wybranego elementu (lub elementów) (X)HTML lub XML. Można w
+					ten
+					sposób opisać wszystkie pojęcia odpowiedzialne za prezentację elementów dokumentów internetowych,
+					takie jak
+					rodzina czcionek, kolor tekstu, marginesy, odstęp międzywierszowy lub nawet pozycja danego elementu
+					względem
+					innych elementów bądź okna przeglądarki. Wykorzystanie arkuszy stylów daje znacznie większe
+					możliwości
+					pozycjonowania elementów na stronie, niż oferuje sam (X)HTML. CSS został stworzony w celu
+					odseparowania
+					struktury dokumentu od formy jego prezentacji. Separacja ta zwiększa zakres dostępności witryny,
+					zmniejsza
+					zawiłość dokumentu, ułatwia wprowadzanie zmian w strukturze dokumentu. CSS ułatwia także zmiany w
+					renderowaniu
+					strony w zależności od obsługiwanego medium (ekran, palmtop, dokument w druku, czytnik ekranowy).
+					Stosowanie
+					zewnętrznych arkuszy CSS daje możliwość zmiany wyglądu wielu stron naraz bez ingerowania w sam kod
+					(X)HTML,
+					ponieważ arkusze mogą być wspólne dla wielu dokumentów.</p>
+			</article>
 
-  <footer class='main-footer'>
-    <p class="main-footer__text">Dawid Majewski 2021 - Portfolio Frontendowe</p>
-    <a href="#top" class="main-footer__link">Powrót do góry</a>
-  </footer>
+			<article>
+				<h3 class="articles__inner-article-title">JS</h3>
+				<p class="articles__text">JavaScript, w skrócie JS – skryptowy język programowania, stworzony przez
+					firmę
+					Netscape, najczęściej stosowany na stronach internetowych. Twórcą JavaScriptu jest Brendan Eich[3].
+					W połowie
+					lat 90. XX wieku organizacja ECMA wydała na podstawie JavaScriptu standard języka skryptowego o
+					nazwie
+					ECMAScript, aktualnie rozwijaniem tego standardu zajmuje się komisja TC39[4].
+				</p>
+			</article>
+		</section>
+	</main>
 
+	<footer class='main-footer'>
+		<p class="main-footer__text">Dawid Majewski 2021 - Portfolio Frontendowe</p>
+		<p class="main-footer__text-add--js">Tekst.</p>
+		<a href="#top" class="main-footer__link">Powrót do góry</a>
+	</footer>
+	<script src="main.js"></script>
 </body>
 
 </html>

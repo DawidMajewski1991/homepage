@@ -1,7 +1,13 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 body {
   background-image: url('bg.png');
-  margin: 0;
-  padding: 0;
 }
 
 .about {
@@ -19,16 +25,22 @@ body {
 
 .about__photo {
   width: 100%;
-  max-width: 220px;
-  margin: 0 20px 0 10px;;
+  max-width: 250px;
+  height: 200px;
+  margin: 0 20px 0 10px;
+  ;
   display: block;
   float: left;
   border-radius: 5px;
 }
 
 .about__text {
-  padding: 10px;
+  padding: 10px 0 0 0;
   border-radius: 5px;
+}
+
+.about__text--color {
+  color: orangered;
 }
 
 .about__box-a {
@@ -39,7 +51,7 @@ body {
   padding: 10px;
   box-sizing: border-box;
   position: absolute;
-  top: 29px;
+  top: 329px;
   left: 500px;
   color: white;
   z-index: 90;
@@ -53,14 +65,14 @@ body {
   padding: 10px;
   box-sizing: border-box;
   position: absolute;
-  top: 59px;
+  top: 359px;
   left: 530px;
   color: white;
 }
 
 .article {
   max-width: 400px;
-  background:rgb(198, 223, 231);
+  background: rgb(198, 223, 231);
   padding: 40px;
   margin: 0 0 20px 0;
 }
@@ -150,6 +162,15 @@ body {
   padding: 0 40px;
 }
 
+.hobby, .plan, .dictionary, .table {
+  padding: 0 0 0 15px;
+}
+
+.hobby__list {
+  list-style: none;
+  padding: 0 0 0 15px;
+}
+
 .main-footer {
   background: #bfe3fc;
   padding: 10px 0 5px 0;
@@ -179,15 +200,12 @@ body {
   background: #73c2fab7;
 }
 
-.navigation {
-  position: fixed;
-  width: 100%;
-  top: 10px;
-  box-sizing: border-box;
-  padding: 20px;
-  background: rgb(193, 227, 255);
-  margin: 0;
-  z-index: 100;
+.navigation__list {
+  list-style: none;
+}
+
+.navigation__item {
+  display: inline;
 }
 
 .navigation__link {
@@ -219,4 +237,19 @@ body {
 .page__photo {
   width: 250px;
   height: 150px;
+}
+
+.site-header {
+  position: fixed;
+  width: 100%;
+  top: 10px;
+  box-sizing: border-box;
+  padding: 20px;
+  background: rgb(193, 227, 255);
+  margin: 0;
+  z-index: 100;
+}
+
+.table__contents {
+  width: 100%;
 }
