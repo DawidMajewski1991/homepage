@@ -10,26 +10,25 @@
 </head>
 
 <body>
-    <header>
-        <a class="mainLink" href="index.html">Strona główna</a>
-        <a class="mainLink" href="html-desc.html">HTML</a>
-        <a class="mainLink" href="monday.html">Poniedziałek</a>
-        <a class="mainLink" href="tuesday.html">Wtorek</a>
-        <a class="mainLink" href="wednesday.html">Środa</a>
-
-        <h1 class="mainHeader">
-            HTML
-        </h1>
+    <header class="navigation">
+        <a class="navigation__link" href="index.html">Strona główna</a>
+        <a class="navigation__link" href="html-desc.html">HTML</a>
+        <a class="navigation__link" href="monday.html">Poniedziałek</a>
+        <a class="navigation__link" href="tuesday.html">Wtorek</a>
+        <a class="navigation__link" href="wednesday.html">Środa</a>
     </header>
 
-    <main>
-        <a class="mainLink"rticle>
+    <main class="page" id="top">
+        <h1 class="page__main-header">
+            HTML
+        </h1>
+        <article class="articles">
             <header>
-                <h2 class="sectionHeader">
+                <h2 class="articles__header">
                     HTML - opis
                 </h2>
             </header>
-            <img src="html5.png" alt="html" title="HTML Picture" class="picture">
+            <img src="html5.png" alt="html" title="HTML Picture" class="page__photo">
             <p class="text">HTML pozwala opisać strukturę informacji zawartych wewnątrz strony internetowej, nadając
                 odpowiednie
                 znaczenie semantyczne poszczególnym fragmentom tekstu – formując hiperłącza, akapity, nagłówki, listy –
@@ -44,8 +43,9 @@
         </article>
     </main>
 
-    <footer>
-        <p class="footerText">Dawid Majewski 2021. Portfolio Frontendowe.</p>
+    <footer class="main-footer">
+        <p class="main-footer__text">Dawid Majewski 2021. Portfolio Frontendowe.</p>
+        <a href="#top" class="main-footer__link">Powrót do góry</a>
     </footer>
 </body>
 

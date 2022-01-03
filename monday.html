@@ -10,26 +10,27 @@
 </head>
 
 <body>
-  <header>
-    <a class="mainLink" href="index.html">Strona główna</a>
-    <a class="mainLink" href="html-desc.html">HTML</a>
-    <a class="mainLink" href="monday.html">Poniedziałek</a>
-    <a class="mainLink" href="tuesday.html">Wtorek</a>
-    <a class="mainLink" href="wednesday.html">Środa</a>
+  <header class="navigation">
+    <a class="navigation__link" href="index.html">Strona główna</a>
+    <a class="navigation__link" href="html-desc.html">HTML</a>
+    <a class="navigation__link" href="monday.html">Poniedziałek</a>
+    <a class="navigation__link" href="tuesday.html">Wtorek</a>
+    <a class="navigation__link" href="wednesday.html">Środa</a>
 
   </header>
 
-  <main>
+  <main class="page" id="top">
     <header>
-      <h1 class="mainHeader">
+      <h1 class="page__main-header">
         Poniedziałek
       </h1>
-      <img src="night.png" alt="dog" title="cute dog" class="weekPhoto">
+      <img src="night.png" alt="dog" title="cute dog" class="page__photo">
     </header>
   </main>
 
-  <footer>
-    <p class="footerText">Dawid Majewski 2021. Portfolio Frontendowe.</p>
+  <footer class="main-footer">
+    <p class="main-footer__text">Dawid Majewski 2021. Portfolio Frontendowe.</p>
+    <a href="#top" class="main-footer__link">Powrót do góry</a>
   </footer>
 
 </body>

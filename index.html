@@ -10,54 +10,58 @@
 </head>
 
 <body>
-  <header>
-    <a class="mainLink" href="index.html">Strona główna</a>
-    <a class="mainLink" href="html-desc.html">HTML</a>
-    <a class="mainLink" href="monday.html">Poniedziałek</a>
-    <a class="mainLink" href="tuesday.html">Wtorek</a>
-    <a class="mainLink" href="wednesday.html">Środa</a>
-
+  <header class="navigation">
+    <a class="navigation__link" href="index.html">Strona główna</a>
+    <a class="navigation__link" href="html-desc.html">HTML</a>
+    <a class="navigation__link" href="monday.html">Poniedziałek</a>
+    <a class="navigation__link" href="tuesday.html">Wtorek</a>
+    <a class="navigation__link" href="wednesday.html">Środa</a>
   </header>
 
-  <main class="page">
+  <main class="page" id="top">
     <header>
-      <h1 class="mainHeader">
+      <h1 class="page__main-header">
         Dawid Majewski - Portfolio
       </h1>
 
-      <a class="mainLink" href="#articles">Artykuły</a>
+      <a class="page__inner-link" href="#articles">Artykuły</a>
     </header>
 
     <section class="about">
-      <h2 class="sectionHeader">
+
+      <div class="about__box-a">FIND 2019</div>
+      <div class="about__box-b">FIND 2019</div>
+
+      <img src="photo.jpg" alt="autor" title="Dawid Majewski" class="about__photo">
+
+      <h2 class="about__header">
         Kim jestem?
       </h2>
-      <img src="photo.jpg" alt="autor" title="Dawid Majewski" class="authorPhoto">
-      <p class="text">
-        Jestem Dawid Majewski. Gram na <strong>basie</strong>. Lubię skateboarding.
-        <br>
-        Uczę się Frontendu oraz Pythona.
+      
+      <p class="about__text">Jestem Dawid Majewski. Uczę się frontendu oraz Pythona. Gram na basie i uczę innych muzyki.
       </p>
     </section>
 
-    <section id="articles">
-      <h2 class="diaryHeader">
+    <section id="articles" class="articles">
+      <h2 class="articles__header">
         Artykuły:
       </h2>
-      <section>
-        <h3 class="smallHeader">HTML</h3>
-        <p class="text">HTML pozwala opisać strukturę informacji zawartych wewnątrz strony internetowej, nadając
+      <article class="articles__section">
+        <h3 class="articles__inner-article-title">HTML</h3>
+        <p class="articles__text">HTML pozwala opisać strukturę informacji zawartych wewnątrz strony internetowej,
+          nadając
           odpowiednie
           znaczenie semantyczne poszczególnym fragmentom tekstu – formując hiperłącza, akapity, nagłówki, listy – oraz
           osadza w tekście dokumentu obiekty plikowe, na przykład multimedia, lub elementy baz danych, na przykład
           interaktywne formularze danych. HTML umożliwia określenie wyglądu dokumentu w przeglądarce internetowej. Do
           szczegółowego opisu formatowania akapitów, nagłówków, użytych czcionek i kolorów, zalecane jest
-          wykorzystywanie kaskadowych arkuszy stylów (w skrócie CSS).<em>HTML</em></p>
-      </section>
+          wykorzystywanie kaskadowych arkuszy stylów (w skrócie CSS).</p>
+      </article>
 
-      <section>
-        <h3 class="smallHeader">CSS</h3>
-        <p class="text">Kaskadowe arkusze stylów (ang. Cascading Style Sheets, w skrócie CSS) – język służący do opisu
+      <article>
+        <h3 class="articles__inner-article-title">CSS</h3>
+        <p class="articles__text">Kaskadowe arkusze stylów (ang. Cascading Style Sheets, w skrócie CSS) – język służący
+          do opisu
           formy
           prezentacji (wyświetlania) stron WWW. CSS został opracowany przez organizację W3C w 1996 r. jako potomek
           języka DSSSL przeznaczony do używania w połączeniu z SGML-em. Pierwszy szkic CSS zaproponował w 1994 r. Håkon
@@ -72,17 +76,22 @@
           strony w zależności od obsługiwanego medium (ekran, palmtop, dokument w druku, czytnik ekranowy). Stosowanie
           zewnętrznych arkuszy CSS daje możliwość zmiany wyglądu wielu stron naraz bez ingerowania w sam kod (X)HTML,
           ponieważ arkusze mogą być wspólne dla wielu dokumentów.</p>
-      </section>
+      </article>
 
-      <section>
-        <h3 class="smallHeader">JS</h3>
-        <p class="text">Paragraf JS</p>
-      </section>
+      <article>
+        <h3 class="articles__inner-article-title">JS</h3>
+        <p class="articles__text">JavaScript, w skrócie JS – skryptowy język programowania, stworzony przez firmę
+          Netscape, najczęściej stosowany na stronach internetowych. Twórcą JavaScriptu jest Brendan Eich[3]. W połowie
+          lat 90. XX wieku organizacja ECMA wydała na podstawie JavaScriptu standard języka skryptowego o nazwie
+          ECMAScript, aktualnie rozwijaniem tego standardu zajmuje się komisja TC39[4].
+        </p>
+      </article>
     </section>
   </main>
 
-  <footer>
-    <p class="footerText">Dawid Majewski 2021. Portfolio Frontendowe.</p>
+  <footer class='main-footer'>
+    <p class="main-footer__text">Dawid Majewski 2021 - Portfolio Frontendowe</p>
+    <a href="#top" class="main-footer__link">Powrót do góry</a>
   </footer>
 
 </body>
