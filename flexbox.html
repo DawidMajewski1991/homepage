@@ -2,26 +2,44 @@
 <html lang="pl">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
-  <link href="normalize.css" rel="stylesheet" type="text/css">
-  <link href="style.css" rel="stylesheet" type="text/css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="css/normalize.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/flexbox.css" rel="stylesheet" type="text/css">
 </head>
+
 <body>
-    <main>
-        <header class="site-header">
-            <nav class="navigation">
-                <ul class="navigation__list">
-                    <li class="navigation__item"><a class="navigation__link navigation__link--js" href="index.html">Strona główna</a></li>
-                    <li class="navigation__item"><a class="navigation__link navigation__link--js" href="html-desc.html">HTML</a></li>
-                    <li class="navigation__item"><a class="navigation__link navigation__link--js" href="monday.html">Poniedziałek</a></li>
-                    <li class="navigation__item"><a class="navigation__link navigation__link--js" href="tuesday.html">Wtorek</a></li>
-                    <li class="navigation__item"><a class="navigation__link navigation__link--js" href="wednesday.html">Środa</a></li>
-                    <li class="navigation__item"><a class="navigation__link navigation__link--js" href="buttons.html">Przyciski</a></li>
-                    <li class="navigation__item"><a class="navigation__link navigation__link--js" href="flexbox.html">Flexbox</a></li>
-                </ul>
-            </nav>
+    <header class="site-header">
+		<nav class="navigation">
+			<ul class="navigation__list">
+				<li class="navigation__item"><a class="navigation__link navigation__link--js" href="index.html">Strona główna</a></li>
+				<li class="navigation__item"><a class="navigation__link navigation__link--js" href="html-desc.html">HTML</a></li>
+				<li class="navigation__item"><a class="navigation__link navigation__link--js" href="monday.html">Poniedziałek</a></li>
+				<li class="navigation__item"><a class="navigation__link navigation__link--js" href="tuesday.html">Wtorek</a></li>
+				<li class="navigation__item"><a class="navigation__link navigation__link--js" href="wednesday.html">Środa</a></li>
+				<li class="navigation__item"><a class="navigation__link navigation__link--js" href="buttons.html">Przyciski</a></li>
+				<li class="navigation__item"><a class="navigation__link navigation__link--js" href="flexbox.html">Flexbox</a></li>
+			</ul>
+		</nav>
+    </header>
+    <main class="page">
+        <div class="flex">
+            <div class="flex__item">1</div>
+            <div class="flex__item">2</div>
+            <div class="flex__item">3</div>
+            <div class="flex__item">4</div>
+            <div class="flex__item flex__item--bigger">5</div>
+            <div class="flex__item flex__item--centered">6</div>
+            <div class="flex__item">7</div>
+        </div>
     </main>
+
+    <footer class='main-footer'>
+		<p class="main-footer__text">Dawid Majewski 2021 - Portfolio Frontendowe</p>
+		<p class="main-footer__text-add--js">Tekst.</p>
+		<a href="#top" class="main-footer__link">Powrót do góry</a>
+	</footer>
 </body>

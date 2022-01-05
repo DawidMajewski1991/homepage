@@ -1,0 +1,34 @@
+.flex {
+    border: 4px solid rgb(238, 42, 42);
+    min-height: 1000px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    align-content: space-around;
+    align-items: center;
+}
+
+.flex__item {
+    border: 3px solid white;
+    padding: 16px;
+    text-align: center;
+    background: orange;
+    color: purple;
+    font-weight: bold;
+    font-size: 20px;
+    min-height: 200px;
+    order: 5;
+    flex-shrink: 1;
+    flex: 1 0 220px;
+}
+    
+.flex__item--bigger {
+    height: 400px;
+    order: 1;
+}
+
+.flex__item--centered {
+    align-self: center;
+    order:3;
+}
