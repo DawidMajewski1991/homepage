@@ -212,12 +212,23 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  max-width: 50vw;
+  max-width: 1500px;
   margin: auto;
   padding: 0;
 }
 
 .navigation__item {
+  padding: 10px;
+  margin: 1px 1px;
+  border-radius: 10px;
+  background: #98cff7d5;
+  min-width:  170px;
+  text-align: center;
+
+}
+
+.navigation__item:hover {
+  background: #83cbffd5;
 }
 
 .navigation__link {
@@ -260,7 +271,7 @@ body {
   width: 100%;
   top: 10px;
   box-sizing: border-box;
-  padding: 20px;
+  padding: 10px;
   background: rgb(193, 227, 255);
   margin: 0;
   z-index: 100;
