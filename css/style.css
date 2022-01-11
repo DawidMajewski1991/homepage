@@ -22,7 +22,7 @@ body {
   background: #c3e6ffe3;
   padding: 20px 14px;
   border-radius: 10px;
-  margin: 50px 0;
+  margin: 0;
   position: relative;
   overflow: hidden;
 }
@@ -52,28 +52,32 @@ body {
 
 .about__box-a {
   width: 180px;
-  height: 100px;
+  height: 150px;
   background: rgba(140, 0, 255, 0.432);
   border: 10px solid rgb(255, 0, 0);
   padding: 10px;
   box-sizing: border-box;
   position: absolute;
-  top: 329px;
-  left: 500px;
+  top: 559px;
+  left: 340px;
   color: white;
   z-index: 90;
+  font-size: 10px;
+  line-height: 8px;
 }
 
 .about__box-b {
   width: 180px;
-  height: 100px;
+  height: 150px;
   background: rgb(0, 195, 255);
   border: 10px solid rgb(0, 255, 42);
   padding: 10px;
   box-sizing: border-box;
   position: absolute;
-  top: 359px;
-  left: 530px;
+  top: 589px;
+  left: 350px;
+  font-size: 10px;
+  line-height: 8px;
   color: white;
 }
 
@@ -152,7 +156,6 @@ body {
   background: #b6e1ffe3;
   padding: 10px;
   border-radius: 10px;
-  margin-bottom: 15px;
   clear: both;
 }
 
@@ -167,6 +170,13 @@ body {
 
 .articles__text {
   padding: 0 40px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 30px;
+  margin: 20px 10px;
 }
 
 .hobby, .plan, .dictionary, .table {
@@ -224,7 +234,6 @@ body {
   background: #98cff7d5;
   min-width:  170px;
   text-align: center;
-
 }
 
 .navigation__item:hover {
@@ -242,7 +251,7 @@ body {
   border: 1px solid black;
   text-align: justify;
   margin: 80px auto;
-  max-width: 900px;
+  max-width: 1300px;
   border-radius: 8px;
   padding: 5px 20px;
 }
@@ -279,4 +288,50 @@ body {
 
 .table__contents {
   width: 100%;
+}
+
+@media (max-width: 800px) {
+  .articles__text {
+    padding: 5px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .navigation__list {
+    list-style: none;
+    display: grid;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 90px;
+    margin: auto;
+    padding: 0;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  
+  .navigation__item {
+    padding: 0;
+    margin: 1px 1px;
+    border-radius: 10px;
+    background: #98cff7d5;
+    min-width:  80px;
+    text-align: center;
+    font-size: 12px;
+  }
+
+  .main-footer{
+    font-size: 12px;
+    line-height: 14px;
+  }
+  
+  .main-footer__link {
+    display: none;
+  }
+
+  .page {
+    font-size: 12px;
+    line-height: 16px;
+    padding: 0;
+  }
 }

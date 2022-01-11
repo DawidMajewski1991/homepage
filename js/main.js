@@ -157,4 +157,21 @@ console.log('-----------')
 console.log(calculateFat(3));
 console.log('-----------')
 console.log(calculateFat(4));
+
+
+function hello(name, age) {
+    alert(`Witaj ${name}, który masz ${age} lat.`)
+}
+
+hello('Chris', 29)
  */
+
+const button = document.querySelector('.page__main-header-button--js');
+console.log(button);
+
+function handleClick(e) {
+    const header = document.querySelector('.page__main-header--js');
+    header.innerHTML = 'Uczę się kodować we frontendzie.'
+}
+
+button.addEventListener('click', handleClick);
