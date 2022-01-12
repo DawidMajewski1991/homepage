@@ -21,7 +21,7 @@ body {
   background-attachment: fixed;
   background-repeat:no-repeat;
   background-size:cover;
-  padding: 20px 34px;
+  padding: 120px 34px;
   margin: 0;
   min-width: 100vw;
   min-height: 100vh;
@@ -70,7 +70,7 @@ body {
   max-width: 400px;
   background: rgb(198, 223, 231);
   padding: 40px;
-  margin: 0 0 20px 0;
+  margin: 70px 0 0 0;
 }
 
 .article__title, .article__description, .article__footer {
@@ -152,11 +152,14 @@ body {
 
 .articles__header {
   color: #000000;
+  font-size: 60px;
+  padding: 0 40px;
 }
 
-.articles__inner-article-title {
+.articles__title {
   color: #000000;
-  padding: 0 20px;
+  padding: 0 40px;
+  font-size: 40px;
 }
 
 .articles__text {
@@ -169,22 +172,20 @@ body {
   grid-template-rows: 100vh 100vh 100vh;
 }
 
-.header-top__link {
-  text-decoration: none;
-  color: #004f52;
-}
-
-.header-top__title {
-  color: #003A64;
-  background:rgb(197, 241, 255);
-  text-align: center;
-  margin: 50px 0;
-  border-radius: 5px;
-  padding: 10px 0;
-}
-
-.header-top__title--red {
-  color: red;
+.header-top {
+  background: rgba(255, 51, 0, 0.829);
+  background-attachment: scroll;
+  width: 100%;
+  top: 10px;
+  box-sizing: border-box;
+  padding: 10px;
+  margin: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
 }
 
 .hobby {
@@ -263,11 +264,25 @@ body {
   background: #36abffd5;
 }
 
+.navigation {
+  width: 100vw;
+}
+
+.navigation__button {
+  background: none;
+  border: none;
+  color:rgb(0, 0, 0);
+  padding: 0;
+  margin: 0;
+  font-size: 50px;
+  align-self: flex-end;
+}
+
 .navigation__list {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
   max-width: 1500px;
   margin: auto;
   padding: 0;
@@ -291,16 +306,6 @@ body {
   height: 150px;
 }
 
-.site-header {
-  background-image: url('../img/bg_blue.jpg');
-  width: 100%;
-  top: 10px;
-  box-sizing: border-box;
-  padding: 10px;
-  margin: 0;
-  z-index: 100;
-}
-
 .table {
   border: 1px solid black;
   padding: 20px;
@@ -319,15 +324,6 @@ body {
     grid-template-columns: 1fr;
   }
 
-  .navigation__button {
-    width: 100px;
-    background: rgb(52, 176, 248);
-    border-radius: 10px;
-    border: none;
-    color:rgb(241, 249, 255);
-    padding: 0;
-    margin: 0;
-  }
 
   .navigation__button:hover {
     background:rgb(131, 210, 255);
@@ -336,6 +332,10 @@ body {
   .site-header {
     display: flex;
     justify-content: flex-end;
+  }
+
+  .navigation__button {
+    background:rgb(255, 255, 255);
   }
 
   .navigation__list {
@@ -377,11 +377,5 @@ body {
 
   .site-header {
     padding: 2px;
-  }
-}
-
-@media (min-width: 801px) {
-  .navigation__button {
-    display: none;
   }
 }

@@ -7,6 +7,11 @@
     justify-content:space-around;
     align-content: space-around;
     align-items: center;
+    background-image: url('../img/bg_yellow.jpg');
+    background-attachment: fixed;
+    background-repeat:no-repeat;
+    background-size:cover;
+    margin: 0;
 }
 
 .flex__item {
@@ -24,13 +29,4 @@
     flex: 1 0 220px;
     margin: 10px;
 }
-    
-.flex__item--bigger {
-    height: 400px;
-    order: 1;
-}
-
-.flex__item--centered {
-    align-self: center;
-    order:3;
 }
