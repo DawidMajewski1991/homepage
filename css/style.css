@@ -379,3 +379,59 @@ body {
     padding: 2px;
   }
 }
+
+@media (min-width: 2550px) {
+  .grid {
+    background: rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;
+  }
+  .about, .hobby, .articles {
+    
+    min-width: 60vw;
+    max-width: 60vw;
+    margin: auto;
+    align-self: center;
+  }
+}
+
+@media (min-width: 3500px) {
+  .grid {
+    background: rgb(0, 0, 0);
+    padding: 78px 0 0 0;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 0;
+
+  }
+  .about, .hobby, .articles {
+    
+    min-width: 33vw;
+    max-width: 33vw;
+    margin: 0;
+    align-self: center;
+  }
+
+  .about {
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0
+  }
+
+  .about__header {
+    padding-top: 0;
+  }
+
+  .about, .articles {
+    height: 100%;
+  }
+
+  .articles__header {
+    margin: 0;
+  }
+
+.articles__grid, .hobby__grid {
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  
+}
