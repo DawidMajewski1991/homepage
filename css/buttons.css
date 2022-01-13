@@ -2,7 +2,6 @@
     max-width: 400px;
     background: rgb(198, 223, 231);
     padding: 40px;
-    margin: 70px 0 0 0;
   }
   
   .article__title, .article__description, .article__footer {
@@ -62,9 +61,23 @@
   .article__footer {
     padding: 0 0 20px 0;
     color: grey;
+    font-size: 14px;
   }
   
   .article__reading-time, .article__comments-counter {
     float: left;
     margin: 0 30px 0 0;
-  }  
+  } 
+
+  .buttons-main-section {
+    background-image: url('../img/bg_yellow.jpg');
+    background-attachment: fixed;
+    background-repeat:no-repeat;
+    background-size:cover;
+    min-height: 100vh;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+  }

@@ -37,43 +37,55 @@
 	</header>
 
 	<main class="a-main" id="top">
-		<section class="big-section-grid">
+		<div class="big-main-grid">
 			<section class="about">
-				<div>
-					<section class="about__links">
-						<a class="about__links-item" href="#">FACEBOOK</a>
-						<a class="about__links-item" href="#">YOUTUBE</a>
-						<a class="about__links-item" href="#">GITHUB</a>
-					</section>
+				<aside class="about__links">
+					<a class="about__links-item" href="#">FACEBOOK</a>
+					<a class="about__links-item" href="#">YOUTUBE</a>
+					<a class="about__links-item" href="#">GITHUB</a>
+				</aside>
 
-					<h2 class="about__header">
-						Witaj na moim Portfolio!
-					</h2>
+				<div class="about__flex">
+					<div class="about__flex-item">
+						<header class="about__header">
+							<h1 class="about__hello">
+								Witaj na moim Portfolio!
+							</h1>
+						</header>
+						<p class="about__introduction">Kim jestem?</p>
 
-					<p class="about__introduction">Kim jestem?</p>
+						<p class="about__text">
+							Nazywam się Dawid Majewski. Jakoś tak wyszło, że jestem muzykiem. Gram na kilku
+							instrumentach i
+							uczę innych. Mam zespół muzyczny - Birds No Fly. Gram muzykę alternatywną, pop, rock, trochę
+							funku i w swoich utworach wykorzystuję także elementy jazzu. Jeśli masz ochotę posłuchać
+							mojej
+							twórczości to zapraszam na YouTube'owy kanał naszego zespołu. Od jakiegoś czasu uczę się
+							frontendu. Ta strona internetowa jest efektem nauki HTML-a, CSS-ów i JS-a.
+						</p>
 
-					<p class="about__text">
-						Nazywam się Dawid Majewski. Jakoś tak wyszło, że jestem muzykiem. Gram na kilku instrumentach i
-						uczę innych. Mam zespół muzyczny - Birds No Fly. Gram muzykę alternatywną, pop, rock, trochę
-						funku i w swoich utworach wykorzystuję także elementy jazzu. Jeśli masz ochotę posłuchać mojej
-						twórczości to zapraszam na YouTube'owy kanał naszego zespołu. Od jakiegoś czasu uczę się
-						frontendu. Ta strona internetowa jest efektem nauki HTML-a, CSS-ów i JS-a.
-					</p>
-
-
-					<p class="about__text">
-						Zapraszam do zapoznania się z moją stroną internetową, a za jej pośrednictwem także trochę ze
-						mną.
-					</p>
+						<p class="about__text">
+							Zapraszam do zapoznania się z moją stroną internetową, a za jej pośrednictwem także trochę
+							ze
+							mną.
+						</p>
+					</div>
+					<div class="about__flex-item">
+						<img src="img/dm.jpg" alt="autor" title="Dawid Majewski" class="about__photo">
+					</div>
 				</div>
-				<img src="img/dm.jpg" alt="autor" title="Dawid Majewski" class="about__photo">
 			</section>
 			<section class="hobby">
-				<h2 class="hobby__header">
-					Moje zainteresowania
-				</h2>
-				<section class="hobby__grid">
+				<header class="hobby__header">
+					<h2 class="hobby__title">
+						Moje zainteresowania
+					</h2>
+				</header>
+				<div class="hobby__grid">
 					<article class="hobby__box">
+						<header class="hobby__article-header">
+							<h3 class="hobby__article-title">Skateboarding</h3>
+						</header>
 						<img src="img/skate.jpg" alt="skateboard" title="skateboard" class="hobby__photo">
 						<p class="hobby__text">
 							Interesuję się skateboardingiem od 2002 roku. Jeździłem kilka lat na deskorolce. Nagrywałem
@@ -83,6 +95,9 @@
 						</p>
 					</article>
 					<article class="hobby__box">
+						<header class="hobby__article-header">
+							<h3 class="hobby__article-title">Muzyka</h3>
+						</header>
 						<img src="img/bass.jpg" alt="bass" title="bass" class="hobby__photo">
 						<p class="hobby__text">
 							Z muzyką mam do czynienia od 2007 roku. Zaczynałem grać na gitarze klasycznej, ale przez
@@ -93,6 +108,9 @@
 						</p>
 					</article>
 					<article class="hobby__box">
+						<header class="hobby__article-header">
+							<h3 class="hobby__article-title">Programowanie</h3>
+						</header>
 						<img src="img/dev.jpg" alt="dev" title="dev" class="hobby__photo">
 						<p class="hobby__text">
 							Od dziecka chciałem robić gry. Gdy miałem 6 lat rysowałem z bratem swoją fabrykę gier na
@@ -102,16 +120,20 @@
 						</p>
 
 					</article>
-				</section>
+				</div>
 			</section>
 
-			<section id="articles" class="articles">
-				<h2 class="articles__header">
-					Czego się uczę?
-				</h2>
+			<section class="articles">
+				<header class="articles__header">
+					<h2 class="articles__title">
+						Czego się uczę?
+					</h2>
+				</header>
 				<div class="articles__grid">
 					<article class="articles__section">
-						<h3 class="articles__title">HTML</h3>
+						<header class="articles__article-header">
+							<h3 class="articles__article-title">HTML</h3>
+						</header>
 						<p class="articles__text">HTML pozwala opisać strukturę informacji zawartych wewnątrz strony
 							internetowej, nadając odpowiednie znaczenie semantyczne poszczególnym fragmentom tekstu –
 							formując hiperłącza, akapity,
@@ -124,15 +146,35 @@
 							jest wykorzystywanie kaskadowych arkuszy stylów (w skrócie CSS).</p>
 					</article>
 
-					<article>
-						<h3 class="articles__title">CSS</h3>
+					<article class="articles__section">
+						<header class="articles__article-header">
+							<h3 class="articles__article-title">CSS</h3>
+						</header>
 						<p class="articles__text">Kaskadowe arkusze stylów (ang. Cascading Style Sheets, w skrócie CSS)
+							– język służący do opisu formy prezentacji (wyświetlania) stron WWW. CSS został opracowany
+							przez organizację W3C w 1996 r. jako potomek języka DSSSL przeznaczony do używania w
+							połączeniu z SGML-em. Pierwszy szkic CSS zaproponował w 1994 r. Håkon Wium Lie[1].
 
-						</p>
+							Arkusz stylów CSS to lista dyrektyw (tzw. reguł) ustalających w jaki sposób ma zostać
+							wyświetlana przez przeglądarkę internetową zawartość wybranego elementu (lub elementów)
+							(X)HTML lub XML. Można w ten sposób opisać wszystkie pojęcia odpowiedzialne za prezentację
+							elementów dokumentów internetowych, takie jak rodzina czcionek, kolor tekstu, marginesy,
+							odstęp międzywierszowy lub nawet pozycja danego elementu względem innych elementów bądź okna
+							przeglądarki. Wykorzystanie arkuszy stylów daje znacznie większe możliwości pozycjonowania
+							elementów na stronie, niż oferuje sam (X)HTML.
+
+							CSS został stworzony w celu odseparowania struktury dokumentu od formy jego prezentacji.
+							Separacja ta zwiększa zakres dostępności witryny, zmniejsza zawiłość dokumentu, ułatwia
+							wprowadzanie zmian w strukturze dokumentu. CSS ułatwia także zmiany w renderowaniu strony w
+							zależności od obsługiwanego medium (ekran, palmtop, dokument w druku, czytnik ekranowy).
+							Stosowanie zewnętrznych arkuszy CSS daje możliwość zmiany wyglądu wielu stron naraz bez
+							ingerowania w sam kod (X)HTML, ponieważ arkusze mogą być wspólne dla wielu dokumentów.</p>
 					</article>
 
-					<article>
-						<h3 class="articles__title">JS</h3>
+					<article class="articles__section">
+						<header class="articles__article-header">
+							<h3 class="articles__article-title">JS</h3>
+						</header>
 						<p class="articles__text">JavaScript, w skrócie JS – skryptowy język programowania, stworzony
 							przez firmę Netscape, najczęściej stosowany na stronach internetowych. Twórcą JavaScriptu
 							jest Brendan
@@ -142,16 +184,79 @@
 							TC39.
 						</p>
 					</article>
+
+					<article class="articles__section">
+						<header class="articles__article-header">
+							<h3 class="articles__article-title">Python</h3>
+						</header>
+						<p class="articles__text">Python – język programowania wysokiego poziomu ogólnego
+							przeznaczenia, o rozbudowanym pakiecie bibliotek standardowych, którego ideą
+							przewodnią jest czytelność i klarowność kodu źródłowego. Jego składnia cechuje się
+							przejrzystością i zwięzłością.
+
+							Python wspiera różne paradygmaty programowania: obiektowy, imperatywny oraz w mniejszym
+							stopniu funkcyjny. Posiada w pełni dynamiczny system typów i automatyczne zarządzanie
+							pamięcią, będąc w tym podobnym do języków Perl, Ruby, Scheme czy Tcl. Podobnie jak inne
+							języki dynamiczne jest często używany jako język skryptowy. Interpretery Pythona są dostępne
+							na wiele systemów operacyjnych.
+
+							Python rozwijany jest jako projekt Open Source zarządzany przez Python Software Foundation,
+							która jest organizacją non-profit. Standardową implementacją języka jest CPython (napisany w
+							C), ale istnieją też inne, np. Jython (napisany w Javie), CLPython napisany w Common Lisp,
+							IronPython (na platformę .NET) i PyPy (napisany w Pythonie, zob. bootstrap).</p>
+					</article>
+
+					<article class="articles__section">
+						<header class="articles__article-header">
+							<h3 class="articles__article-title">C++</h3>
+						</header>
+						<p class="articles__text">C++ – język programowania ogólnego przeznaczenia. Język został
+							zaprojektowany przez Bjarne Stroustrupa jako rozszerzenie języka C o obiektowe mechanizmy
+							abstrakcji danych i silną statyczną kontrolę typów. Zachowanie zgodności z językiem C na
+							poziomie kodu źródłowego pozostaje jednym z podstawowych celów projektowych kolejnych
+							standardów języka.
+
+							Umożliwia abstrakcję danych oraz stosowanie kilku paradygmatów programowania:
+							proceduralnego, obiektowego i generycznego, a także funkcyjnego i modularnego.
+							Charakteryzuje się wysoką wydajnością kodu wynikowego, bezpośrednim dostępem do zasobów
+							sprzętowych i funkcji systemowych, łatwością tworzenia i korzystania z bibliotek (napisanych
+							w C++, C lub innych językach), niezależnością od konkretnej platformy sprzętowej lub
+							systemowej (co gwarantuje wysoką przenośność kodów źródłowych) oraz niewielkim środowiskiem
+							uruchomieniowym. Podstawowym obszarem jego zastosowań są aplikacje i systemy operacyjne.
+						</p>
+					</article>
+
+					<article class="articles__section">
+						<header class="articles__article-header">
+							<h3 class="articles__article-title">ECMAScrpit</h3>
+						</header>
+						<p class="articles__text">ECMAScript – stworzona przez ECMA ustandaryzowana specyfikacja
+							obiektowego[2][3] języka programowania, której najbardziej znane implementacje to
+							JavaScript, JScript i ActionScript. Specyfikacja ta oznaczona jest jako ECMA-262 i ISO/IEC
+							16262. Język początkowo był projektowany z myślą o pisaniu skryptów i przeniesieniu części
+							zadań obliczeniowych na stronę klienta (przeglądarki internetowej) w architekturze
+							klient-serwer[4], od tego czasu znacznie ewoluował i błędem byłoby nazywanie go językiem
+							skryptowym, sami autorzy w specyfikacji nazywają go językiem programowania który wyszedł
+							poza skryptowanie i jest pełnoprawnym językiem programowania ogólnego zastosowania[5],
+							wskazując na jego właściwości porównywalne do tych obecnych w Java, Self, czy Scheme[6].
+
+							ECMA-262 definiuje samą semantykę języka oraz niektóre podstawowe typy danych (String,
+							Boolean, Number, Object itp.) i obiekty (np. Math, Array). Elementy takie jak model
+							dokumentu lub specjalistyczne funkcje wejścia-wyjścia, obsługi GUI itp. nie wchodzą w skład
+							specyfikacji ECMAScript, definiowane są przez inne standardy (W3C DOM) lub samych autorów
+							konkretnych implementacji.
+						</p>
+					</article>
 				</div>
 			</section>
-		</section>
+		</div>
 	</main>
 
 	<footer class='footer'>
 		<p class="footer__title">Dawid Majewski 2021 - Portfolio Frontendowe</p>
 		<p class="footer__text">E-mail: dawidmajewski1991@gmail.com</p>
 		<p class="footer__text">Facebook:</p>
-		<a class="footer__link-outer" href="https://www.facebook.com/birdsnofly">link</a>
+		<a class="footer__link" href="https://www.facebook.com/birdsnofly">link</a>
 	</footer>
 
 </body>
