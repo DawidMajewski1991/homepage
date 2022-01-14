@@ -161,7 +161,12 @@ body {
   margin: 0;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 640) {
+
+}
+
+@media (min-width: 641px) and (max-width: 1152) {
+
 }
 
 @media (min-width: 2560px) and (max-width: 3071px) {
@@ -169,5 +174,28 @@ body {
 }
 
 @media (min-width: 3072px) {
+  .about__flex {
+    max-width: 55vw;
+    margin: auto;
+    padding: 200px 0 100px 0;
+  }
 
+  .about__text, .hobby__text, .articles__text
+  {
+    font-size: 32px;
+    line-height: 70px
+  }
+
+  .hobby__grid {
+    grid-template-columns: 1fr;
+    max-width: 55vw;
+    margin: auto;
+    padding: 0 0 100px 0;
+  }
+
+  .articles__grid {
+    grid-template-columns: 1fr 1fr;
+    max-width: 55vw;
+    margin: auto;
+  }
 }
