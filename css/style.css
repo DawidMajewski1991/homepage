@@ -212,6 +212,7 @@ body {
   .articles__title, .hobby__title {
     padding:0;
     font-size: 16px;
+    margin: 0;
   }
 
   .articles {
@@ -270,6 +271,15 @@ body {
   .about__flex {
     flex-direction: column;
     flex-wrap: wrap;
+  }
+
+  .about__links-item, .navigation__link {
+    text-decoration: none;
+    padding: 0 8px 0 0;
+    color: rgb(239, 248, 255);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 8px;
   }
 
   .about__text {
