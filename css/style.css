@@ -13,6 +13,7 @@ body {
 
 .a-main {
   text-align: justify;
+  position: relative;
 }
 
 .about {
@@ -40,6 +41,9 @@ body {
   margin: 0 0 100px 0;
 }
 
+.about__hello--color {
+  color:rgb(0, 132, 255);
+}
 .about__introduction {
   font-size: 42px;
   text-align: center;
@@ -60,6 +64,13 @@ body {
 }
 
 .about__links-section-flex {
+  display: flex;
+  justify-content: space-evenly;
+  height: 100%;
+  align-items: center;
+}
+
+.about__links-section-flex--visible {
   display: flex;
   justify-content: space-evenly;
   height: 100%;
@@ -94,7 +105,6 @@ body {
   margin: 40px;
 }
 
-
 .articles__article-title, .hobby__article-title {
   font-size: 32px;
 }
@@ -106,6 +116,18 @@ body {
 .big-main-grid {
   display: grid;
   grid-template-columns: 1fr;
+}
+
+.button {
+  position:fixed;
+  z-index: 2;
+}
+
+.burger {
+  position:fixed;
+  z-index: 2;
+  left: 60px;
+  display: none;
 }
 
 .header-top {
@@ -205,6 +227,29 @@ body {
     line-height: 8px;
   }
 
+  .about__links-section-flex {
+    display: none;
+    justify-content: space-evenly;
+    height: 100%;
+    align-items: center;
+  }
+
+  .about__links-section-flex--visible {
+    display: grid;
+    grid-template-columns:  1fr 1fr;
+    grid-template-rows: 70px;
+    justify-items: center;
+    align-items: end;
+    max-height: 70px;
+    min-width: 100vw;
+    justify-content: space-evenly;
+    height: 100%;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    background-color: black;
+  }
+
   .about__text {
     padding: 20px;
   }
@@ -229,6 +274,20 @@ body {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-gap: 64px;
+  }
+
+  .burger {
+    position:fixed;
+    z-index: 2;
+    left: 60px;
+    display:inline-block;
+  }
+
+  .burger--invisible {
+    position:fixed;
+    z-index: 2;
+    left: 60px;
+    display:none;
   }
 
   .hobby {

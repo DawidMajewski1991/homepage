@@ -1,10 +1,7 @@
-const button = document.querySelector('.page__main-header-button--js');
-console.log(button);
+const burger = document.querySelector('.burger--js');
+console.log(burger);
 
-function handleClick(e) {
-    const headTitle = document.querySelector('.page__main-header--js');
-    headTitle.innerHTML = 'Uczę się kodować we frontendzie.'
-    headTitle.classList.toggle('page__main-header--red')
-}
-
-button.addEventListener('click', handleClick);
+burger.addEventListener('click', (e) => {
+    const hamburger = document.querySelector('.about__links-section-flex--js');
+    hamburger.classList.toggle('about__links-section-flex--visible');
+})

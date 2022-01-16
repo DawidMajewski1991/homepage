@@ -18,8 +18,8 @@ body {
 
 .card {
     background: rgb(255, 255, 255);
-    width: 624px;
-    max-height: 320px;
+    max-width: 700px;
+    min-height: 200px;
     padding: 32px;
     border-radius: 16px;
     display: flex;
@@ -76,4 +76,27 @@ body {
 
 .card__text--red {
     color: rgb(255, 0, 0);
+}
+
+@media (max-width: 640px) {
+    .card {
+        background: rgb(255, 255, 255);
+        max-width: 700px;
+        min-height: 200px;
+        padding: 16px;
+        border-radius: 16px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        font-family: arial;
+        margin: 10px 10px;
+    }
+
+    .card__inner-box {
+        margin: 0;
+    }
+
+    .card__title {
+        text-align: center;
+}
 }

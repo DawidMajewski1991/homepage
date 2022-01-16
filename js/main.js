@@ -164,7 +164,7 @@ function hello(name, age) {
 }
 
 hello('Chris', 29)
- */
+
 const hamburgerButton = document.querySelector('.navigation__button');
 console.log(hamburgerButton);
 
@@ -174,3 +174,12 @@ function hamburgerToMenu() {
 }
 
 hamburgerButton.addEventListener('click', hamburgerToMenu);
+ */
+
+const button = document.querySelector('.button--js');
+console.log(button);
+
+button.addEventListener('click', (e) => {
+    const header = document.querySelector('.about__hello');
+    header.classList.toggle('about__hello--color')
+})
