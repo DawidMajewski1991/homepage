@@ -41,9 +41,28 @@ body {
   margin: 0 0 100px 0;
 }
 
+.about__text::before {
+  content: '';
+  background: rgb(255, 153, 0);
+  display: inline-block;
+  border-radius: 100%;
+  height: 12px;
+  width: 12px;
+}
+
+.about__text::after {
+  content: '';
+  background: rgb(255, 94, 0);
+  display: inline-block;
+  border-radius: 100%;
+  height: 12px;
+  width: 12px;
+}
+
 .about__hello--color {
   color:rgb(0, 132, 255);
 }
+
 .about__introduction {
   font-size: 42px;
   text-align: center;
@@ -63,11 +82,31 @@ body {
   font-size: 24px;
 }
 
+.about__links-item:hover, .navigation__link:hover {
+  color:gold;
+}
+
+.about__links-item--youtube:hover {
+  color:rgb(241, 0, 0);
+}
+
+.about__links-item:hover:first-child {
+  color:rgb(57, 143, 255);
+}
+
+.about__links-item:hover:last-child {
+  color:rgb(199, 199, 199);
+}
+
 .about__links-section-flex {
   display: flex;
   justify-content: space-evenly;
   height: 100%;
   align-items: center;
+}
+
+.about__links-item:active, .about__links-item:first-child:active, .about__links-item:last-child:active, .navigation__link:active {
+  color:rgb(255, 153, 0);
 }
 
 .about__links-section-flex--visible {
